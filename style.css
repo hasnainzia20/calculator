@@ -12,7 +12,7 @@ body {
 .timer {
     color: black;
     display:inline-block;
-    margin: auto;
+    margin: 20px auto;
 }
 
 .timer2 {
