@@ -96,6 +96,6 @@ body {
 
 @media screen and (max-width:480px) {
     .timer2 span {
-        font-size: 25px;
+        font-size: 40px;
     }
 }
