@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+
+</head>
+<body>
+        <div class="main-wrapper">
+            <div class="timer">  
+                <div class="timer2">
+                    <span id="hour"></span>
+                    <span id="min"></span>
+                    <span id="sec"></span>
+                    <span id="ampm"></span>
+                </div>
+            </div>
+            <div class="cal">
+                <div class="screen">
+                    <input class="text" id="text" placeholder="0">
+                </div>
+                <div class="keypad">
+                    <div class="keypad-eraser">
+                        <input type="button" value="CE" class="eraser" id="ce" onclick="clrFullScreen(null)">
+                        <input type="button" value="C" class="eraser" id="c" onclick="clrFullScreen(null)"> 
+                        <input type="button" value="DEL" class="eraser" id="del" onclick="delLastChar()">
+                    </div>   
+                    <div class="operation-top">
+                        <input type="button" class="operation" id="divby-1" value="1/x" onclick="oneByX()">
+                        <input type="button" class="operation" id="square" value="x&sup2" onclick="square()"> 
+                        <input type="button" class="operation" id="under-root" value="&#8730;x" onclick="underRoot()">
+                        <input type="button" class="operation" id="div" value="/" onclick="screen('/')">
+                    </div>
+                    <div class="values">
+                        <input type="button" class="numbers" value="7" onclick="screen(7)">
+                        <input type="button" class="numbers" value="8" onclick="screen(8)"> 
+                        <input type="button" class="numbers" value="9" onclick="screen(9)">
+                        <input type="button" class="operation" id="mul" value="*" onclick="screen('*')">
+                    </div>
+                    <div class="values">
+                        <input type="button" class="numbers" value="4" onclick="screen(4)">
+                        <input type="button" class="numbers" value="5" onclick="screen(5)">  
+                        <input type="button" class="numbers" value="6" onclick="screen(6)">
+                        <input type="button" class="operation" id="sub" value="-" onclick="screen('-')">
+                    </div>
+                    <div class="values">
+                        <input type="button" class="numbers" value="1" onclick="screen(1)">
+                        <input type="button" class="numbers" value="2" onclick="screen(2)"> 
+                        <input type="button" class="numbers" value="3" onclick="screen(3)">
+                        <input type="button" class="operation" id="add" value="+" onclick="screen('+')">
+                    </div>
+                    
+                    <div>
+                        <div class="operation-bottom">
+                            <input type="button" class="dot" value="." id="dot" onclick="screen('.')">
+                            <input type="button" class="numbers" value="0" id="zero" onclick="screen(0)">
+                            <input type="button" class="operation" value="=" id="equal" onclick="result()">
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+</body>
+</html>
