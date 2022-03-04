@@ -94,7 +94,7 @@ body {
     background-color: #1F4068;
 }
 
-@media screen and (max-width:420px) {
+@media screen and (max-width:480px) {
     .timer2 span {
         font-size: 25px;
     }
